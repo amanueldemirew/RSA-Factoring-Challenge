@@ -23,7 +23,7 @@ int prime_factor(char *num)
 	{
 		if (num1 % i == 0)
 		{
-			 printf("%s=%d*%d\n",num , num1/i, i);
+			 printf("%d=%d*%d\n",num1 , num1/i, i);
 			 break;
 		}
 		i += 1;
