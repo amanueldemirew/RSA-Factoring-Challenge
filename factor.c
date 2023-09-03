@@ -8,22 +8,22 @@
 
 int prime_factor(char *num)
 {
-	u_int32_t num1;
-	u_int32_t i;
+	unsigned long long num1;
+	unsigned long long i;
 	int j;
-	num1 = atoi(num);
 	for(j = 0; j <= strlen(num); j++)
 	{
 		if (num[j] == '\n')
 			num[j] = '\0';
 	}
 
+	num1 = atoi(num);
 	i = 2;
 	while(i <= num1)
 	{
 		if (num1 % i == 0)
 		{
-			 printf("%u=%d*%d\n",num1 , num1/i, i);
+			 printf("%llu=%llu*%llu\n",num1 , num1/i, i);
 			 break;
 		}
 		i += 1;
